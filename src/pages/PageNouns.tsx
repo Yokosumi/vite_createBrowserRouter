@@ -5,8 +5,12 @@ export const PageNouns = () => {
   const nouns = useLoaderData() as INoun[];
   return (
     <>
-      {nouns.length}
-      <div>nouns page</div>
+      <p>there are {nouns.length} nouns:</p>
+      {nouns.map((noun) => (
+        <div key={noun.article}>
+          {noun.article} {noun.singular}
+        </div>
+      ))}
     </>
   );
 };
