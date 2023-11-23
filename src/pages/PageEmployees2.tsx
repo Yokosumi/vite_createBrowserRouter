@@ -19,7 +19,16 @@ export const PageEmployees2 = () => {
   return (
     <>
       {employeesQuery.data && (
-        <p> there are {employeesQuery.data?.length} employees</p>
+        <>
+          <p>There are {employeesQuery.data.length} employees:</p>
+          {employeesQuery.data.map((employee) => {
+            return (
+              <p key={employee.employeeID}>
+                {employee.firstName} {employee.lastName}
+              </p>
+            );
+          })}
+        </>
       )}
     </>
   );
