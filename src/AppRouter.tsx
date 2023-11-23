@@ -4,6 +4,7 @@ import { PageWelcome } from "./pages/PageWelcome.tsx";
 import { PageAbout } from "./pages/PageAbout.tsx";
 import { Page404 } from "./pages/Page404.tsx";
 import { PageTodos } from "./pages/PageTodos.tsx";
+import { PageNouns } from "./pages/PageNouns.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
             ]);
           });
         },
+      },
+      {
+        path: "/nouns",
+        element: <PageNouns />,
       },
       {
         path: "/",

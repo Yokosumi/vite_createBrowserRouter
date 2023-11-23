@@ -14,6 +14,9 @@ export const Nav = () => {
           <li>
             <NavLink to="todos">Todos </NavLink>
           </li>
+          <li>
+            <NavLink to="nouns">Nouns </NavLink>
+          </li>
         </ul>
       </nav>
     </>
