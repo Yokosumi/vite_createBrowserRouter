@@ -6,18 +6,18 @@ export const PageEmployees1 = () => {
   const [employees, setEmployees] = useState<IEmployee[]>([]);
 
   useEffect(() => {
-    (async () => {
+    setTimeout(async () => {
       const response = await axios.get(
         "https://edwardtanguay.vercel.app/share/employees.json"
       );
       const _employees = response.data;
       setEmployees(_employees);
-    })();
+    }, 2000);
   }, []);
 
   return (
     <>
-      <p>There are {employees.length} employees:</p>
+      <p className="text-4xl">There are {employees.length} employees:</p>
       <ul>
         {employees.map((employee) => (
           <li className="text-3xl my-2" key={employee.employeeID}>
