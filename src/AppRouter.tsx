@@ -22,6 +22,19 @@ export const router = createBrowserRouter([
       {
         path: "/todos",
         element: <PageTodos />,
+        loader: async () => {
+          return new Promise((resolve) => {
+            resolve([
+              111,
+              222,
+              "lunch",
+              "doctor",
+              "call",
+              "appointment",
+              "lunch",
+            ]);
+          });
+        },
       },
       {
         path: "/",
