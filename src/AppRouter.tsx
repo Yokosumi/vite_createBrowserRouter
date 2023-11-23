@@ -6,6 +6,8 @@ import { PageAbout } from "./pages/PageAbout.tsx";
 import { Page404 } from "./pages/Page404.tsx";
 import { PageTodos } from "./pages/PageTodos.tsx";
 import { PageNouns } from "./pages/PageNouns.tsx";
+import { PageEmployees1 } from "./pages/PageEmployees1.tsx";
+import { PageEmployees2 } from "./pages/PageEmployees2.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +44,14 @@ export const router = createBrowserRouter([
         path: "/nouns",
         element: <PageNouns />,
         loader: nounLoader,
+      },
+      {
+        path: "/emp1",
+        element: <PageEmployees1 />,
+      },
+      {
+        path: "/emp2",
+        element: <PageEmployees2 />,
       },
       {
         path: "/",
