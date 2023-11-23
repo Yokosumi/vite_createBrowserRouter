@@ -6,7 +6,7 @@ export const Page404 = () => {
       <p>error page: 404</p>
       <p>
         Please return to the home{" "}
-        <NavLink className="underline" to="/">
+        <NavLink className="underline link-style" to="/">
           page
         </NavLink>
         .
