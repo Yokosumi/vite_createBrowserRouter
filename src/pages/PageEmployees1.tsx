@@ -21,7 +21,7 @@ export const PageEmployees1 = () => {
       <ul>
         {employees.map((employee) => (
           <li className="text-3xl my-2" key={employee.employeeID}>
-            {employee.firstName} {employee.lastName} - {employee.title}
+            {employee.firstName} {employee.lastName}
           </li>
         ))}
       </ul>
